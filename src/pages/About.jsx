@@ -44,7 +44,7 @@ const About = () => {
           }`}
         >
           <h2 className="text-3xl font-extrabold mb-4 text-orange-400">NSS</h2>
-          <p className="text-lg text-gray-300">
+          <p className="text-lg text-white-300">
             The event also features exciting challenges that encourage out-of-the-box thinking and practical problem-solving.
             Join us at Prasidhi to explore new possibilities, network with like-minded individuals, and contribute to groundbreaking solutions.
             Be part of a community that drives change and shapes the future!
@@ -56,7 +56,7 @@ const About = () => {
           }`}
         >
           <h2 className="text-3xl font-extrabold mb-4 text-orange-400">Prasidhi</h2>
-          <p className="text-lg text-gray-300">
+          <p className="text-lg text-white-300">
             Prasidhi is a national-level symposium aimed at bringing together creative minds to innovate and build amazing projects.
             It serves as a platform for students, professionals, and enthusiasts to collaborate and showcase their skills in technology and innovation.
             Participants will have the opportunity to engage in workshops, seminars, and hands-on sessions, gaining valuable insights and experience.

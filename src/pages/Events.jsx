@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const EventSection = ({ title, events, rotate, onEventClick }) => {
     return (
         <div className="flex-1 bg-transparent p-4 md:p-12 hover:shadow-2xl transition-shadow duration-300 rounded-lg shadow-lg bg-gray-100 w-full max-w-7xl mx-auto h-auto">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center text-blue-600">{title}</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center text-blue-50">{title}</h2>
             <ul className="flex flex-wrap justify-center gap-6 md:gap-12">
                 {events.map((event, index) => (
                     <li
@@ -62,37 +62,36 @@ const Modal = ({ event, onClose }) => {
     };
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center">
-            <div className="fixed inset-0 bg-black bg-opacity-75" onClick={onClose}></div>
-            <div
-                className="relative bg-white p-6 md:p-8 rounded-lg w-full max-w-sm md:max-w-md shadow-xl mx-auto transition-transform transform scale-95 hover:scale-100"
-                onClick={handleOverlayClick}
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-50">
+        <div
+            className="relative bg-white p-6 md:p-8 rounded-lg w-full max-w-sm md:max-w-md shadow-xl mx-4 transition-transform transform scale-95 hover:scale-100"
+            onClick={handleOverlayClick}
+        >
+            <button
+                onClick={onClose}
+                className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 transition"
             >
-                <button
-                    onClick={onClose}
-                    className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 transition"
-                >
-                    ✖
-                </button>
-                <img
-                    src={event.image}
-                    alt={event.title}
-                    className="w-full h-48 object-cover rounded-md mb-4"
-                />
-                <h2 className="text-xl md:text-2xl font-bold mb-2 text-center text-blue-600">
-                    {event.title}
-                </h2>
-                <p className="text-gray-700 text-sm md:text-base mb-6 text-center">
-                    {event.details}
-                </p>
-                <button
-                    onClick={onClose}
-                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition w-full"
-                >
-                    Close
-                </button>
-            </div>
+                ✖
+            </button>
+            <img
+                src={event.image}
+                alt={event.title}
+                className="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h2 className="text-xl md:text-2xl font-bold mb-2 text-center text-blue-600">
+                {event.title}
+            </h2>
+            <p className="text-gray-700 text-sm md:text-base mb-6 text-center">
+                {event.details}
+            </p>
+            <button
+                onClick={onClose}
+                className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition w-full"
+            >
+                Close
+            </button>
         </div>
+    </div>    
     );
 };
 

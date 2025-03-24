@@ -43,10 +43,10 @@ const Home = () => {
             <div className="text-center mb-6">
                 <h2 className="text-4xl sm:text-5xl font-extrabold text-white">KONGU ENGINEERING COLLEGE</h2>
                 <h3 className="text-lg sm:text-xl font-semibold text-pink-300">(Autonomous)</h3>
-                <h3 className="text-2xl sm:text-3xl font-semibold mt-2 text-sky-500/100 drop-shadow-md shadow-black">
+                <h3 className="text-2xl sm:text-3xl font-bold italic mt-2 text-sky-100 drop-shadow-md shadow-black">
                     NATIONAL SERVICE SCHEME
                 </h3>
-                <p className="text-md sm:text-lg italic mt-1 text-lime-500/100">"Not Me, But You"</p>
+                <p className="text-md sm:text-xl italic mt-1 text-yellow-400">"Not Me, But You"</p>
             </div>
 
             {/* Event Title */}
@@ -54,10 +54,10 @@ const Home = () => {
                 <div className="flex justify-center items-center h-full">
                     <img src="/Prasidhi.png" alt="PRASIDHI Poster" className="rounded-lg w-64 sm:w-80 h-auto hover:scale-105 transition duration-300" />
                 </div>
-                <p className="text-lg sm:text-2xl font-medium text-gray-900">A National-Level Symposium</p>
-                <p className="text-md sm:text-lg font-medium mt-2 text-rose-500/100">April 23, 2025</p>
+                <p className="text-lg sm:text-3xl italic  font-medium text-gray-900">National-Level Symposium</p>
+                <p className="text-md sm:text-xl font-medium mt-2 italic text-purple-300">April 23, 2025</p>
                 <p className="text-lg sm:text-xl italic font-bold mt-4 text-gray-900">
-                Theme: <span className="text-green-600">{'RRR (Reduce, Reuse, Recycle)'}</span>
+                Theme: <span className="text-yellow-400">{'RRR (Reduce, Reuse, Recycle)'}</span>
                 </p>
             </div>
 

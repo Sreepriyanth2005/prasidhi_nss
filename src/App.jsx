@@ -141,7 +141,7 @@ const App = () => {
           className={sectionClasses}
           style={{ backgroundColor: "grey" }}
           >
-          <div className="bg-transparent p-6 hover:shadow-xl transition-shadow duration-300">
+          <div className="bg-transparent p-2 hover:shadow-xl transition-shadow duration-300">
             <Home />
           </div>
         </section>
@@ -157,7 +157,7 @@ const App = () => {
             backgroundColor: "grey" // Ensures the background color is grey
           }}
         >        
-          <div className="bg-transparent p-6 hover:shadow-xl transition-shadow duration-300">
+          <div className="bg-transparent p-2 hover:shadow-xl transition-shadow duration-300">
             <About />
           </div>
         </section>
@@ -173,7 +173,7 @@ const App = () => {
             backgroundColor: "grey" // Ensures the background color is grey
           }}
         >        
-          <div className="bg-transparent p-6 hover:shadow-xl transition-shadow duration-300">
+          <div className="bg-transparent p-2 hover:shadow-xl transition-shadow duration-300">
             <ScrollingImages />
           </div>
         </section>
@@ -189,7 +189,7 @@ const App = () => {
             backgroundColor: "grey" // Ensures the background color is grey
           }}
         >        
-          <div className="bg-transparent p-6 hover:shadow-xl transition-shadow duration-300">
+          <div className="bg-transparent p-2 hover:shadow-xl transition-shadow duration-300">
             <Events />
           </div>
         </section>
@@ -205,7 +205,7 @@ const App = () => {
             backgroundColor: "grey" // Ensures the background color is grey
           }}
           >
-          <div className="bg-transparent p-6 hover:shadow-xl transition-shadow duration-300">
+          <div className="bg-transparent p-2 hover:shadow-xl transition-shadow duration-300">
             <Register />
           </div>
         </section>
@@ -221,7 +221,7 @@ const App = () => {
             backgroundColor: "grey" // Ensures the background color is grey
           }}
         >        
-          <div className="bg-transparent p-6 hover:shadow-xl transition-shadow duration-300">
+          <div className="bg-transparent p-2 hover:shadow-xl transition-shadow duration-300">
             <Contact />
           </div>
         </section>
@@ -237,7 +237,7 @@ const App = () => {
             backgroundColor: "grey" // Ensures the background color is grey
           }}
         >
-          <div className="bg-transparent p-4 hover:shadow-lg transition-shadow duration-300 rounded-lg">
+          <div className="bg-transparent p-2 hover:shadow-lg transition-shadow duration-300 rounded-lg">
             <Developer />
           </div>
         </section>
