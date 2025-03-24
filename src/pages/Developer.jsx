@@ -1,16 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { FaInstagram, FaLinkedin,  FaGithub  } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const developers = [
   {
-    name: 'Sreepriyanth  N S  /',
+    name: 'Sreepriyanth N S /',
     email: 'sreepriyanth2005@gmail.com',
     phoneNo: '+91 63822 93288',
     role: 'DEVELOPER',
     links: {
       instagram: 'https://www.instagram.com/mr.sree_155?igsh=dG05YjIybWVrMDU1',
       linkedin: 'https://www.linkedin.com/in/sreepriyanth2005/',
-      github:'https://github.com/sreepriyanth2005'
+      github: 'https://github.com/sreepriyanth2005'
     },
   },
 ];
@@ -61,10 +61,11 @@ const Developer = () => {
               } delay-${index * 100}`}
             >
               <div className="md:w-1/2 text-center md:text-left">
-                <div className = " flex col"><h2 className="text-2xl font-semibold">{dev.name}  </h2>
-                <span className="bg-gradient-to-r from-blue-500 to-green-500 text-white py-1 px-3 rounded-full font-semibold text-sm">
-                  {dev.role}
-                </span>
+                <div className="flex flex-col md:flex-row items-center md:items-start">
+                  <h2 className="text-2xl font-semibold">{dev.name}</h2>
+                  <span className="bg-gradient-to-r from-blue-500 to-green-500 text-white py-1 px-3 rounded-full font-semibold text-sm md:ml-2">
+                    {dev.role}
+                  </span>
                 </div>
                 <div className="mt-2">
                   <p>{dev.email}</p>
@@ -84,17 +85,11 @@ const Developer = () => {
                 >
                   <FaLinkedin className="hover:animate-bounce" />
                 </a>
-                {/* <a
-                  href={dev.links.email}
-                  className="text-blue-500 hover:text-blue-300 text-3xl transform hover:scale-125 transition-transform duration-300 ease-out"
-                >
-                  <FaEnvelope className="hover:animate-bounce" />
-                </a> */}
                 <a
                   href={dev.links.github}
                   className="text-green-500 hover:text-green-300 text-3xl transform hover:scale-125 transition-transform duration-300 ease-out"
                 >
-                <FaGithub className="hover:animate-bounce" />
+                  <FaGithub className="hover:animate-bounce" />
                 </a>
               </div>
             </div>
