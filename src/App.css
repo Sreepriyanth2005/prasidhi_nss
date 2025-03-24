@@ -1,0 +1,73 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+color: #ffffff;
+}
+
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bg-blue-600 {
+  background-color: #1e3a8a;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.hover\:underline:hover {
+  text-decoration: underline;
+}
+
+section > div:hover {
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.app-container {
+  height: 100vh;
+  background-image: url('/path/to/background2.jpg'); /* Update the path accordingly */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+  .app-container {
+      background-size: cover;
+      background-position: center;
+  }
+}

@@ -1,0 +1,290 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================= */
+/*        FADE ANIMATIONS     */
+/* ========================= */
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Smooth Fade-in with Delay */
+@keyframes fadeInDelayed {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fadeInDelayed {
+  animation: fadeInDelayed 1.5s ease-in-out forwards;
+}
+
+/* ========================= */
+/*        SLIDE ANIMATIONS    */
+/* ========================= */
+
+/* Slide-in from Left */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+/* Slide-in from Right */
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* Slide-in from Top */
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideInTop {
+  animation: slideInTop 0.8s ease-out forwards;
+}
+
+/* Slide-in from Bottom */
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideInBottom {
+  animation: slideInBottom 0.8s ease-out forwards;
+}
+
+/* ========================= */
+/*      BOUNCE ANIMATION      */
+/* ========================= */
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite ease-in-out;
+}
+
+/* ========================= */
+/*      GLOW TEXT EFFECT      */
+/* ========================= */
+
+.glow-text {
+  color: #fff;
+  text-shadow: 
+    0 0 5px #fff, 
+    0 0 10px #fff, 
+    0 0 15px #0d6efd,
+    0 0 20px #0d6efd, 
+    0 0 25px #0d6efd;
+}
+
+/* ========================= */
+/*     SCROLL ANIMATIONS      */
+/* ========================= */
+
+/* Forward Scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: 200%;
+  white-space: nowrap;
+}
+
+/* Reverse Scrolling (Left to Right) */
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-reverse {
+  animation: scroll-reverse 20s linear infinite;
+  display: flex;
+  width: 200%;
+  white-space: nowrap;
+}
+
+/* ========================= */
+/*    ROTATION ANIMATIONS     */
+/* ========================= */
+
+/* Subtle Rotation Animation */
+@keyframes rotate-event {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.rotate-tech {
+  animation: rotate-event 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* ========================= */
+/*       HOVER EFFECTS        */
+/* ========================= */
+
+/* Hover Zoom Effect for Cards */
+.hover-zoom:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Smooth Scaling on Hover */
+.scale-hover:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* ========================= */
+/*       EMPHASIS EFFECTS     */
+/* ========================= */
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+
+/* ========================= */
+/*      POP-UP ANIMATION      */
+/* ========================= */
+
+/* Pop-Up Animation for Modals or Alerts */
+@keyframes popUp {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-popUp {
+  animation: popUp 0.5s ease-out forwards;
+}
+
+@font-face {
+  font-family: 'aa';
+  src: url('./fonts/SURA\ Font\ For\ Arya\ Name\ .ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes borderMove {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.animate-borderMove {
+  animation: borderMove 3s linear infinite;
+}
+
+
