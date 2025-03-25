@@ -10,7 +10,7 @@ const Register = () => {
 
     const nonTechnicalEvents = [
         'The Think Tank',
-        'TLinkup',
+        'Linkup',
         'Entrepreneurship',
     ];
 
