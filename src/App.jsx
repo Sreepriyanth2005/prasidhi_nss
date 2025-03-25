@@ -42,97 +42,128 @@ const App = () => {
 
   return (
     <div className="app min-h-screen bg-cover bg-fixed bg-center">
-<nav
-  className={`fixed top-0 left-0 w-full p-4 md:p-6 z-10 shadow-md transition-transform duration-300 ${
-    isVisible ? 'translate-y-0' : '-translate-y-full'
-  }`}
-  style={{
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backdropFilter: "blur(10px)",
-    backgroundColor: "grey"
-  }}
->
-  <div className="flex justify-between items-center px-4 md:px-8">
-    {/* KEC Logo */}
-    <img
-      src="/kec logo.png"
-      alt="KEC Logo"
-      className="h-16 md:h-20 ml-4"
-    />
-
-    {/* Navigation Links and Hamburger Menu */}
-    <div className="flex items-center">
-      {/* Hamburger Menu Button for Mobile */}
-      <button
-        className="text-white md:hidden focus:outline-none mr-4"
-        onClick={toggleMenu}
+      <nav
+        className={`fixed top-0 left-0 w-full p-4 md:p-6 z-10 shadow-md transition-transform duration-300 ${
+          isVisible ? 'translate-y-0' : '-translate-y-full'
+        }`}
+        style={{
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backdropFilter: "blur(10px)",
+          backgroundColor: "grey"
+        }}
       >
-        <svg
-          className="w-8 h-8"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+        <div className="flex justify-between items-center px-4 md:px-8">
+          {/* KEC Logo - Always visible on left */}
+          <img
+            src="/kec logo.png"
+            alt="KEC Logo"
+            className="h-16 md:h-20"
           />
-        </svg>
-      </button>
 
-      {/* Navigation Links (Responsive) */}
-      <ul
-        className={`flex-col md:flex md:flex-row md:space-x-8 absolute md:static bg-gray-800 md:bg-transparent w-full md:w-auto top-16 right-0 md:top-0 ${
-          isMenuOpen ? 'block' : 'hidden'
-        } md:block mr-4`}
-      >
-        <li className="text-center py-2 md:py-0">
-          <a href="#home" className={navLinkClasses} onClick={toggleMenu}>
-            Home
-          </a>
-        </li>
-        <li className="text-center py-2 md:py-0">
-          <a href="#about" className={navLinkClasses} onClick={toggleMenu}>
-            About
-          </a>
-        </li>
-        <li className="text-center py-2 md:py-0">
-          <a href="#scrolling-images" className={navLinkClasses} onClick={toggleMenu}>
-            Gallery
-          </a>
-        </li>
-        <li className="text-center py-2 md:py-0">
-          <a href="#events" className={navLinkClasses} onClick={toggleMenu}>
-            Events
-          </a>
-        </li>
-        <li className="text-center py-2 md:py-0">
-          <a href="#register" className={navLinkClasses} onClick={toggleMenu}>
-            Register
-          </a>
-        </li>
-        <li className="text-center py-2 md:py-0">
-          <a href="#contact" className={navLinkClasses} onClick={toggleMenu}>
-            Contact
-          </a>
-        </li>
-      </ul>
+          {/* Middle section - NSS Logo (near menu) and Menu Button */}
+          <div className="flex items-center gap-4">
+            {/* NSS Logo - Visible on both mobile and desktop */}
+            <img
+              src="/nsslogo-removebg-preview.png"
+              alt="NSS Logo"
+              className="h-16 md:h-20"
+            />
 
-      {/* NSS Logo */}
-      <img
-        src="/nsslogo-removebg-preview.png"
-        alt="NSS Logo"
-        className="h-16 md:h-20 mr-4"
-      />
-    </div>
-  </div>
-</nav>
+            {/* Hamburger Menu Button for Mobile */}
+            <button
+              className="text-white md:hidden focus:outline-none"
+              onClick={toggleMenu}
+            >
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+                />
+              </svg>
+            </button>
 
+            {/* Navigation Links (Desktop) */}
+            <ul className="hidden md:flex md:flex-row md:space-x-8">
+              <li>
+                <a href="#home" className={navLinkClasses}>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#about" className={navLinkClasses}>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#scrolling-images" className={navLinkClasses}>
+                  Gallery
+                </a>
+              </li>
+              <li>
+                <a href="#events" className={navLinkClasses}>
+                  Events
+                </a>
+              </li>
+              <li>
+                <a href="#register" className={navLinkClasses}>
+                  Register
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className={navLinkClasses}>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Mobile Menu (Full width dropdown) */}
+        <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
+          <ul className="bg-gray-800 w-full mt-4 py-2 rounded-lg">
+            <li className="text-center py-2">
+              <a href="#home" className={navLinkClasses} onClick={toggleMenu}>
+                Home
+              </a>
+            </li>
+            <li className="text-center py-2">
+              <a href="#about" className={navLinkClasses} onClick={toggleMenu}>
+                About
+              </a>
+            </li>
+            <li className="text-center py-2">
+              <a href="#scrolling-images" className={navLinkClasses} onClick={toggleMenu}>
+                Gallery
+              </a>
+            </li>
+            <li className="text-center py-2">
+              <a href="#events" className={navLinkClasses} onClick={toggleMenu}>
+                Events
+              </a>
+            </li>
+            <li className="text-center py-2">
+              <a href="#register" className={navLinkClasses} onClick={toggleMenu}>
+                Register
+              </a>
+            </li>
+            <li className="text-center py-2">
+              <a href="#contact" className={navLinkClasses} onClick={toggleMenu}>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
       {/* Content Sections */}
       <div className="pt-28 space-y-0">
@@ -140,7 +171,7 @@ const App = () => {
           id="home"
           className={sectionClasses}
           style={{ backgroundColor: "grey" }}
-          >
+        >
           <div className="bg-transparent p-2 hover:shadow-xl transition-shadow duration-300">
             <Home />
           </div>
@@ -154,7 +185,7 @@ const App = () => {
             backgroundSize: "70%",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            backgroundColor: "grey" // Ensures the background color is grey
+            backgroundColor: "grey"
           }}
         >        
           <div className="bg-transparent p-2 hover:shadow-xl transition-shadow duration-300">
@@ -170,7 +201,7 @@ const App = () => {
             backgroundSize: "70%",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            backgroundColor: "grey" // Ensures the background color is grey
+            backgroundColor: "grey"
           }}
         >        
           <div className="bg-transparent p-2 hover:shadow-xl transition-shadow duration-300">
@@ -186,7 +217,7 @@ const App = () => {
             backgroundSize: "70%",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            backgroundColor: "grey" // Ensures the background color is grey
+            backgroundColor: "grey"
           }}
         >        
           <div className="bg-transparent p-2 hover:shadow-xl transition-shadow duration-300">
@@ -202,9 +233,9 @@ const App = () => {
             backgroundSize: "70%",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            backgroundColor: "grey" // Ensures the background color is grey
+            backgroundColor: "grey"
           }}
-          >
+        >
           <div className="bg-transparent p-2 hover:shadow-xl transition-shadow duration-300">
             <Register />
           </div>
@@ -218,7 +249,7 @@ const App = () => {
             backgroundSize: "70%",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            backgroundColor: "grey" // Ensures the background color is grey
+            backgroundColor: "grey"
           }}
         >        
           <div className="bg-transparent p-2 hover:shadow-xl transition-shadow duration-300">
@@ -234,7 +265,7 @@ const App = () => {
             backgroundSize: "70%",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            backgroundColor: "grey" // Ensures the background color is grey
+            backgroundColor: "grey"
           }}
         >
           <div className="bg-transparent p-2 hover:shadow-lg transition-shadow duration-300 rounded-lg">
