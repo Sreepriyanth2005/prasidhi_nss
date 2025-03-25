@@ -23,12 +23,12 @@ const Register = () => {
     );
 
     return (
-        <div className="p-4 md:p-8 animate-fadeIn">
-            <h2 className="text-5xl  font-bold text-blue-500 mb-6 text-center">Register</h2>
+        <div className="p-4 z-10 md:p-8 animate-fadeIn relative bg-grey-300">
+            <h2 className="text-5xl font-bold text-blue-500 mb-6 text-center">Register</h2>
             <div className="flex flex-col lg:flex-row gap-6">
 
                 {/* Technical and Non-Technical Registration Section */}
-                <div className="flex-1 basis-3/5 bg-transparent p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 rounded-lg shadow-md">
+                <div className="flex-1 basis-3/5 bg-transparent p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 rounded-lg shadow-md bg-gray-800">
                     <h2 className="text-xl md:text-3xl font-bold mb-4 text-orange-400">Technical and Non-Technical Registration</h2>
                     <div className="flex flex-col md:flex-row gap-4">
 
@@ -77,7 +77,7 @@ const Register = () => {
                 </div>
 
                 {/* Workshops Registration Section */}
-                <div className="flex-1 basis-2/5 bg-transparent p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 rounded-lg shadow-md">
+                <div className="flex-1 basis-2/5 bg-transparent p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 rounded-lg shadow-md bg-gray-800">
                     <h2 className="text-xl md:text-3xl font-bold mb-4 text-orange-400">Workshops Registration</h2>
                     <h3 className="text-lg md:text-2xl font-semibold mb-2">What is AI & Its Role in Sustainability?</h3>
                     <br></br>

@@ -33,8 +33,3 @@ module.exports = {
   plugins: [],
 };
 
-@media (max-width: 768px) {
-  .bg-cover {
-    background-size: contain;
-  }
-}
