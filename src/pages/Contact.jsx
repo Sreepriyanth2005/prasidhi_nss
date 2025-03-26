@@ -69,7 +69,7 @@ const Contact = () => {
         viewport={{ once: true, amount: 0.2 }}
       >
         {contacts.map((contact, index) => (
-          <div key={index} className="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-md w-full sm:w-auto">
+          <div key={index} className="flex flex-col items-center p-4 bg-gray-600 rounded-lg shadow-md w-full sm:w-auto">
             <span className="font-semibold text-lg mb-1">{contact.name}</span>
             <div className="flex items-center">
               <FaPhoneAlt className="mr-2 text-2xl text-green-500" />
