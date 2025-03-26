@@ -49,7 +49,7 @@ const Developer = () => {
     >
       <div className="container mx-auto px-8">
         <h1 className="text-4xl font-bold text-center mb-8 text-blue-400 animate-colorChange">
-          Our Developer
+          Developer
         </h1>
 
         <div className="space-y-6">
