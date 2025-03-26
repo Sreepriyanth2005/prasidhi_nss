@@ -172,13 +172,13 @@ const Events = () => {
                 <EventSection 
                     title="Non-Technical Events" 
                     events={nonTechnicalEvents} 
-                    rotate={false} 
+                    rotate={true}
                     onEventClick={handleEventClick} 
                 />
                 <EventSection 
                     title="Workshops" 
                     events={workshopDetails} 
-                    rotate={false} 
+                    rotate={true}
                     onEventClick={handleEventClick} 
                 />
             </div>
