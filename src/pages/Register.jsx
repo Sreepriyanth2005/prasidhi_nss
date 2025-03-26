@@ -49,7 +49,7 @@ const Register = () => {
                         <strong className="text-orange-400">NOTE :</strong> Technical events are in the forenoon and Non-Technical in the afternoon.
                     </p>
                     <p className="text-sm md:text-lg mb-2 text-gray-100">
-                        📅 <strong className="text-orange-400">Event Date :</strong> 27th March 2025
+                        📅 <strong className="text-orange-400">Event Date :</strong> 23'rd APRIL 2025
                     </p>
                     <p className="text-sm md:text-lg mb-2 text-gray-100">
                         💰 <strong className="text-orange-400">Registration Fee :</strong> ₹250 per participant
@@ -66,11 +66,12 @@ const Register = () => {
                     <p className="text-sm md:text-lg mb-2 text-gray-100">
                         🏠 <strong className="text-orange-400">Accommodation :</strong> Available upon request (additional charges apply)
                     </p>
+                    <br></br>
                     <a
                         href="https://nss.kongu.edu/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block text-center mt-4 text-2xl md:text-xl text-blue-500 hover:underline cursor-pointer"
+                        className="block text-center mt-4 text-2xl md:text-xl text-blue-300 hover:underline cursor-pointer"
                     >
                         🔗 <strong>Register Now:</strong> Click Here!!
                     </a>
@@ -88,7 +89,7 @@ const Register = () => {
                         <strong className="text-orange-400">NOTE :</strong> Full Day Workshop
                     </p>
                     <p className="text-sm md:text-lg mb-2 text-gray-100">
-                        📅 <strong className="text-orange-400">Event Date :</strong> 27th March 2025
+                        📅 <strong className="text-orange-400">Event Date :</strong> 23'rd APRIL 2025
                     </p>
                     <p className="text-sm md:text-lg mb-2 text-gray-100">
                         💰 <strong className="text-orange-400">Registration Fee :</strong> ₹250 per participant
@@ -105,11 +106,12 @@ const Register = () => {
                     <p className="text-sm md:text-lg mb-2 text-gray-100">
                         🏠 <strong className="text-orange-400">Accommodation :</strong> Available upon request (additional charges apply)
                     </p>
+                    <br></br>
                     <a
                         href="https://nss.kongu.edu/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block text-center mt-4 text-2xl md:text-xl text-blue-500 hover:underline cursor-pointer"
+                        className="block text-center mt-4 text-2xl md:text-xl text-blue-300 hover:underline cursor-pointer"
                     >
                         🔗 <strong>Register Now:</strong> Click Here!!
                     </a>

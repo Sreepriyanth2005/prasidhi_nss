@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const EventSection = ({ title, events, rotate, onEventClick }) => {
     return (
         <div className="flex-1 bg-transparent p-4 md:p-12 hover:shadow-2xl transition-shadow duration-300 rounded-lg shadow-lg bg-gray-100 w-full max-w-7xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center text-blue-800">{title}</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center text-white">{title}</h2>
             <ul className="flex flex-wrap justify-center gap-6 md:gap-12">
                 {events.map((event, index) => (
                     <li
